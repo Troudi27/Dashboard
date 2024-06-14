@@ -1,6 +1,5 @@
 import { AccountBalanceWalletOutlined, AddShoppingCartOutlined, KeyboardArrowUp, MonetizationOnOutlined, PersonOutlined } from "@mui/icons-material"
 import "./Widget.scss"
-import { purple } from "@mui/material/colors";
 
 export default function Widget({type}) {
     let data;
