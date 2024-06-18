@@ -1,21 +1,30 @@
 import {  AccountBox, Assessment, CreditCard, ExitToAppOutlined, LocalShipping, NotificationsNone, PersonOutline, PsychologyOutlined, SettingsOutlined, SettingsSystemDaydreamOutlined, Store } from "@mui/icons-material";
 import "./Sidebar.scss"
 import DashboardIcon from '@mui/icons-material/Dashboard';
+import { Link } from "react-router-dom";
 export default function Sidebar() {
   return (
     
     <div className="sidebar">
         <div className="top">
+          <Link to="/" style={{textDecoration:"none"}}>
             <span className="logo">TroudiAdmin</span>
+          </Link>
         </div>
         <hr />
         <div className="center">
             <ul>
                 <p className="title">MAIN</p>
+                <Link to="/" style={{textDecoration:"none"}}>
                 <li><DashboardIcon  className="icon"/><span>Dashboard</span></li>
+                </Link>
                 <p className="title">LISTS</p>
-                <li><PersonOutline className="icon"/> <span>Users</span></li>
+                <Link to="/users" style={{textDecoration:"none"}}>
+                  <li><PersonOutline className="icon"/> <span>Users</span></li>
+                </Link>
+                <Link to="/products" style={{textDecoration:"none"}}>
                 <li> <Store className="icon"/> <span>Products</span></li>
+                </Link>
                 <li><CreditCard className="icon"/> <span>Orders</span></li>
                 <li><LocalShipping className="icon"/><span>Delivery</span></li>
                 <p className="title">USEFUL</p>
