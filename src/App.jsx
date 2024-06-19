@@ -5,10 +5,11 @@ import New from "./pages/new/New";
 import Single from "./pages/single/Single";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { productInputs, userInputs } from "./formSource";
+import "./style/dark.scss"
 
 function App() {
   return (
-    <div className="App">
+    <div className="App dark">
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
