@@ -28,7 +28,7 @@ export default function DataTable() {
         Add New
         </Link>
       </div>
-        <DataGrid rows={userRows} columns={userColumns.concat(actionColumn)} initialState={{pagination: { paginationModel: { page: 0, pageSize: 9 }, }, }}pageSizeOptions={[9, 10]}checkboxSelection/>
+        <DataGrid className="dataGrid" rows={userRows} columns={userColumns.concat(actionColumn)} initialState={{pagination: { paginationModel: { page: 0, pageSize: 9 }, }, }}pageSizeOptions={[9, 10]}checkboxSelection/>
     </div>
   )
 }

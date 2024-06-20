@@ -51,4 +51,35 @@
             }
         }
     }
+    .dataTable{
+        
+        .dataGrid{
+            color: lightgray;
+            border: none;
+
+            .viewButton,
+            .deleteButton,
+            .cellWithStatus{
+                color: gray;
+                border: none;
+            }
+            
+        }
+    }
+    input{
+        background-color: transparent;
+    }
+    .link{
+        border-color: lightgray;
+        color: lightgray;
+    }
+    .MuiDataGrid-columnHeaderTitleContainer {
+        background-color: #333;
+    }
+    .css-n3fyjk-MuiDataGrid-root .MuiDataGrid-withBorderColor {
+        background-color: #333;
+    } 
+    .MuiDataGrid-filler{
+        background-color: #333;
+    }
 }
